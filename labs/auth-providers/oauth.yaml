@@ -1,11 +1,7 @@
 apiVersion: config.openshift.io/v1
 kind: OAuth
 metadata:
-  creationTimestamp: "2023-09-28T14:08:46Z"
-  generation: 3
   name: cluster
-  resourceVersion: "347052"
-  uid: c8ba3aad-8360-4c1b-9049-00410bc5d2eb
 spec:
   identityProviders:
   - ldap:
@@ -28,9 +24,3 @@ spec:
     mappingMethod: claim
     name: Red Hat Identity Management
     type: LDAP
-  - htpasswd:
-      fileData:
-        name: localusers
-    mappingMethod: claim
-    name: myusers
-    type: HTPasswd
